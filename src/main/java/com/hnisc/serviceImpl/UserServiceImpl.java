@@ -5,6 +5,8 @@ import com.hnisc.entity.User;
 import com.hnisc.service.UserService;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * @author lh141
  */
@@ -17,13 +19,4 @@ public class UserServiceImpl implements UserService {
         this.userDao = userDao;
     }
 
-    @Override
-    public User getUser(Integer userId) {
-        return userDao.getUser(userId);
-    }
-
-    @Override
-    public void saveUser(User user) {
-        userDao.saveUser(user);
-    }
 }

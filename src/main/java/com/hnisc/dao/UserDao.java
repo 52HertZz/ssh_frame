@@ -2,10 +2,11 @@ package com.hnisc.dao;
 
 import com.hnisc.entity.User;
 
+import java.util.List;
+
 /**
  * @author lh141
  */
 public interface UserDao {
-    User getUser(Integer userId);
-    void saveUser(User user);
+
 }

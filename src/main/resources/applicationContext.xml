@@ -37,11 +37,10 @@
                 <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
             </props>
         </property>
-
-        <!-- 引入映射的配置文件 -->
-        <property name="mappingResources">
+            <!-- 引入映射的配置文件 -->
+        <property name="mappingLocations">
             <list>
-                <value>classpath:/com/hnisc/entity/User.hbm.xml</value>
+                <value>classpath:com/hnisc/entity/User.hbm.xml</value>
             </list>
         </property>
         <property name="annotatedClasses">
@@ -49,6 +48,7 @@
                 <value>com.hnisc.entity.User</value>
             </list>
         </property>
+
     </bean>
 
     <!-- 先配置平台事务管理器 -->
