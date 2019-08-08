@@ -5,6 +5,7 @@
 <struts>
     <package name="ssh_frame" extends="struts-default" namespace="/">
         <action name="user_*" class="userAction" method="{1}">
+            <result name="success">/success.jsp</result>
         </action>
     </package>
 </struts>

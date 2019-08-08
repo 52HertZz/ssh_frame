@@ -11,4 +11,8 @@ import java.util.List;
  */
 public class UserDaoImpl extends HibernateDaoSupport implements UserDao {
 
+    @Override
+    public List<User> findAll() {
+        return (List<User>) this.getHibernateTemplate().find("from User");
+    }
 }
