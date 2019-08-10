@@ -5,8 +5,6 @@ import com.hnisc.entity.User;
 import com.hnisc.service.UserService;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
-
 /**
  * @author lh141
  */
@@ -20,7 +18,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> findAll() {
-        return userDao.findAll();
+    public User getUser(Integer userId) {
+        return userDao.getUser(userId);
     }
 }

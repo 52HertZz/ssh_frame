@@ -35,10 +35,9 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
 
-  <!-- 打开程序默认打开的页面
+  <!-- 打开程序默认打开的页面 -->
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
-  -->
 </web-app>
 
